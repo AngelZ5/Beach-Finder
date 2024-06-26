@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Beach Finder</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="font-lato bg-gray-100"
+    style="background-image: url('./src/images/beach.png'); background-repeat: no-repeat; background-size: cover;">
+
+    <!-- Header -->
+    <header class="bg-jet text-white p-6">
+        <div class="container mx-auto text-center h-full">
+            <h1 class="text-4xl font-bold">Beach Finder</h1>
+            <ul>
+                <li class="font-bold text-sm text-center my-2">This website uses simulated functionality for
+                    demonstration purposes only. Please do not rely on the information provided for real-world decisions
+                    or actions.</li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
+        <h2 class="text-2xl font-semibold mb-4">Find the best beaches near you</h2>
+        <p class="text-left pb-5 font-bold">REMEMBER: This website uses simulated functionality for
+            demonstration purposes only. Please do not rely on the information provided for real-world decisions
+            or actions.</p>
+        <form class="flex items-center mb-4">
+            <input type="text" placeholder="Enter your location"
+                class="flex-1 p-2 border border-gray-300 rounded-l-md focus:outline-none focus:border-blue-500">
+            <button type="submit"
+                class="p-2 bg-blue-500 text-white rounded-r-md ml-2 hover:bg-blue-600 focus:outline-none">Search</button>
+        </form>
+
+        <div class="results mb-6">
+            <!-- Beach results will be displayed here -->
+        </div>
+
+        <div class="mb-6">
+            <canvas id="beachQualityChart" width="400" height="200"></canvas>
+        </div>
+
+        <div class="flex justify-center">
+            <a href=""><img class="w-12" src="./src/svg/github.svg" alt="GitHub"></a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-500 text-white p-6 mt-52">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Angel Santana. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script defer src="./src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>
